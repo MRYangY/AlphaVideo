@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        maven{ url "https://developer.huawei.com/repo/" }
+        maven{ url 'https://maven.aliyun.com/repository/google'}
+        maven{ url 'https://maven.aliyun.com/repository/gradle-plugin'}
+        maven{ url 'https://maven.aliyun.com/repository/public'}
+        maven{ url 'https://maven.aliyun.com/repository/jcenter'}
+        google()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven{ url "https://developer.huawei.com/repo/" }
+        maven{ url 'https://maven.aliyun.com/repository/google'}
+        maven{ url 'https://maven.aliyun.com/repository/gradle-plugin'}
+        maven{ url 'https://maven.aliyun.com/repository/public'}
+        maven{ url 'https://maven.aliyun.com/repository/jcenter'}
+        google()
+    }
+}
+rootProject.name = "AlphaVideoTest"
+include ':app'
